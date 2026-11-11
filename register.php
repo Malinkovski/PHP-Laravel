@@ -1,4 +1,3 @@
-
 <?php
 
 session_start();
@@ -14,7 +13,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (strlen($username) < 3 || strlen($password) < 6) {
 
         $message = 'Username must have at least 3 characters and with a minimum of 6 characters for the password.';
-
     } else {
 
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);

@@ -1,4 +1,3 @@
-
 <?php
 
 $db = new SQLite3(__DIR__ . '/expenses.db');
@@ -20,5 +19,3 @@ $db->exec("
         payment TEXT NOT NULL
     )
 ");
-
-?>
